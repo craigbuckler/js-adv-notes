@@ -54,8 +54,6 @@ Can add Firebug Lite to HTML as above.
 * OOP
 * Recursion
 * Window object
-* DOM object
-* Events
 * Form handling
 * Timers and animation
 * HTML5 APIs: audio, video, geolocation, files, web workers
