@@ -3,6 +3,7 @@ Consider this HTML document:
 
 
 ```html
+<!doctype html>
 <html>
   <head></head>
   <body>
@@ -23,10 +24,10 @@ Within a browser, the document is represented by a tree data structure.
 
 ![DOM tree](dom-tree.png)
 
-* The HTML tag is the root element.
+* The HTML tag is the root element (the only child of the `document` object).
 * Each element is known as a node and it has children sprouting from it.
 * A node can have any number of child nodes.
-* A node can only have one parent - with the exception of the HTML node which doesn't have any.
+* A node can only have one parent node (with the exception of the top HTML node which has no elements above it)
 * If we look at an individual node, say the unordered list, we can access it's parent - the article - and work our way up the tree to the grandparent, the great grandparent etc.
 * We can also access it's siblings - these are nodes with the same parent, i,e. the two paragraph tags
 * finally, we can access it's children - that is nodes which have the `ul` as a parent in this case, all the list elements.
@@ -35,7 +36,7 @@ We can examine individual nodes, such as the anchor link:
 
 ![anchor link](dom-node.png)
 
-* it has a couple of attributes (as well as default ones)
+* it has a couple of attributes set (as well as default ones)
 * it also has the text value which is another child node
 
 Even whitespace in an HTML document is stored in the DOM tree. This can be confusing at first, e.g. the `ul` tag could have seven child nodes rather than three because each `li` has whitespace around it.
@@ -46,7 +47,7 @@ Access to the current page's DOM is via the `document` object (a global property
 
 https://developer.mozilla.org/en-US/docs/Web/API/Document
 
-### DOM retrival methods
+### DOM retrieval methods
 To retrieve nodes from the DOM, use:
 
 * `document.getElementById(id)` - returns an [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element) or null
@@ -58,12 +59,14 @@ To retrieve nodes from the DOM, use:
 
 Selecting by ID or class will be faster than CSS selector.
 
-HTMLCollection and NodeList are array-like lists of Element objects. *Live* lists update automatically when a matching element is added or removed from the DOM.
+HTMLCollection and NodeList are array-like lists of Element objects.
+
+*Live* lists update automatically when a matching element is added or removed from the DOM.
 
 **Note**: although collections are array-like and have a `.length`, they're not arrays and you cannot use array methods such as `sort()`. ES6 allows quick conversion to an array using `Array.from()`.
 
 
-### Element retrival methods
+### Element retrieval methods
 Once you have an [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element), the following properties and methods can be used to return further elements including:
 
 * `.getElementsByClassName(class)`
@@ -80,23 +83,18 @@ Once you have an [Element](https://developer.mozilla.org/en-US/docs/Web/API/Elem
 
 It also supports [Node](https://developer.mozilla.org/en-US/docs/Web/API/Node) properties and methods, but be wary these may return whitespace nodes:
 
-* `childNodes`
-* `firstChild`
-* `lastChild`
-* `nextSibling`
-* `parentNode`
-* `textContent`
-* `appendChild()`
-* `insertBefore()`
-* `cloneNode()`
-* `removeChild()`
-* `replaceChild()`
-* `textContent`
-
-**Tip**: view all properties and methods of an element in the developer console. Chrome: Properties tab, Firefox: right-click node, choose **DOM Properties**.
+* `.childNodes`
+* `.firstChild`
+* `.lastChild`
+* `.nextSibling`
+* `.parentNode`
 
 
-### Exercises
+## Browser tools
+View all properties and methods of an element in the developer console. Chrome: Properties tab, Firefox: right-click node, choose **DOM Properties**.
+
+
+## Exercises
 Using the HTML above (or similar)...
 
 1. Get the element with the ID 'list'.
@@ -105,9 +103,9 @@ Using the HTML above (or similar)...
 1. Count the number of child elements of the first element with the class 'intro'.
 1. Find the last paragraph.
 1. Find the last list item.
-1. Remove the last paragraph.
-1. Move the the first paragraph to the end of the article.
 
-You shouldn't require any JavaScript functions or loops!
+You can output the list of nodes using `console.log()`.
 
-Finally, travel the whole DOM tree and output the name of every element node (use recursion!)
+Tip: you shouldn't require any JavaScript functions or loops but can use them if you're stumped!
+
+**Task:** traverse the whole DOM tree and output the name of every element node using recursion.

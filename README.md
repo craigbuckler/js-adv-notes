@@ -38,6 +38,7 @@ Can add Firebug Lite to HTML as above.
 ## Topics to consider
 
 * Module pattern
+* DOM selection
 * DOM manipulation
 * Events and closures
 * Ajax

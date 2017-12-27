@@ -66,11 +66,11 @@ var lib = (function() {
 
     return color;
 
-	}
+  }
 
   // return list of public methods
-	return {
-  	colorTags: colorTags,
+  return {
+    colorTags: colorTags,
     getColors: getColors
   };
 
