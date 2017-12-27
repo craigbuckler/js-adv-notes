@@ -34,6 +34,14 @@ document.body.appendChild(frag);
 ```
 
 
+## HTML5 `<template>` tag
+Segments of your HTML page can be marked as a [template](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template) which allow it to be used multiple times within a page. See:
+
+https://jsfiddle.net/craigbuckler/od0r1u7p/
+
+This only works in recent browsers and not IE. However, a polyfill and style is used to apply backward compatibility.
+
+
 ## Exercises
 Using this HTML (or similar):
 
@@ -60,4 +68,4 @@ Using this HTML (or similar):
 1. Insert a new `<h2>New title</h2>` title before the list.
 1. Insert a new paragraph at the end with the current date.
 
-**Task:** Create a modal pop-up dialog system which can have a custom message and an `OK` button to dismiss. The pop-up should appear when a user clicks the link. Note that we've not covered events yet, so a partial solution may only be achievable at this stage.
+**Task:** Create a modal pop-up dialog system which can have a custom message and an `OK` button to dismiss. The pop-up should appear when a user clicks the link. Note that we've not covered events yet, so a partial solution may only be achievable at this stage. Bonus points for creating two systems: one with a `<template>` and one adding nodes using a document fragment.
