@@ -13,7 +13,7 @@ Information about an element can be obtained using methods including:
 * `.classList` - [manipulate classes](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) using `.add()`, `.remove()`, `.toggle()`, `.contains()` and `.replace()`
 * `.getAttribute([name])` - get an attribute value (can also use a direct `.property`, e.g. `node.id` or `node.href`)
 * `.dataset` - [extract HTML5 `data-` attributes](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset)
-* `.style.property` -
+* `.style.property` - change an individual style
 * `.nodeValue` - the text value of a node
 
 Presume you had selected the first list item into the value `li`. That itself does not have a `.nodeValue`! It's first (and only) child is a text node so `li.firstChild.nodeValue` returns `"item 1"`.
