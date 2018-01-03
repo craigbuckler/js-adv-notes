@@ -29,11 +29,13 @@ Some of the properties above can be changed, i.e.
 * `node.classList.toggle('active');`
 * `node.setAttribute('id', 'myID');` (or node.id = 'myID')
 * `node.removeAttribute('id');`
-* `node.dataSet.value = 1`
+* `node.dataset.value = 1`
 * `node.style.color = '#f00'`
 
 ### Notes
-It's best to avoid using `.style` if you can apply styles in CSS and enable them using a class.
+Cache selected nodes where possible - there's no need to keep fetching the same set.
+
+It's best to avoid using `.style` when you can apply styles in CSS and enable them using a class.
 
 `node.innerHTML = ` and `node.outerHTML = ` can also be used although these are fairly dangerous, error prone, and can pose a security risk.
 
