@@ -35,12 +35,19 @@ Notes:
 Can add Firebug Lite to HTML as above.
 
 
+## Topics covered
+
+* ✅ module pattern
+* ✅ DOM selection
+* ✅ DOM manipulation
+* ✅ closures
+* ✅ events
+
+
 ## Topics to consider
 
-* Module pattern
-* DOM selection
-* DOM manipulation
-* Events and closures
+* timers
+* callbacks, Promises, async/await
 * Ajax
 * Node.js
 * Types
@@ -56,8 +63,8 @@ Can add Firebug Lite to HTML as above.
 * Recursion
 * Window object
 * Form handling
-* Timers and animation
 * HTML5 APIs: audio, video, geolocation, files, web workers
+* canvas and SVG
 * Persistence and storage
 
 Create simple project based on requirements.
