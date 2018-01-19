@@ -216,8 +216,17 @@ OOP in JavaScript is different to other languages in that the object template is
 Note there is a `class` command in ES6 which helps those coming from other languages. However, it's just a sprinkling of syntactical sugar - below the surface, it's using prototypes like you see above.
 
 
+## Examples
+
+[Textarea Limiter](https://jsfiddle.net/craigbuckler/y91ja2zL/) - a Twitter-like text-entry widget which limits the number of characters a user can enter.
+
+This object is initialised using `new TextareaLimit(textAreaNode);` where `textAreaNode` must be a `<textarea>` element with a `data-limit` attribute setting the maximum number of charaters.
+
+A small self-running function creates an object for each appropriate `textarea` when the page loads. Each object then configures and manages itself without further code.
+
+
 ## Further reading
 
 * [Object-oriented JavaScript for beginners](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
 
-OOP goes far further than this and you can set private properties, use inheritance (an object definition uses another as a base), polymorphism (override methods such as `toString`) and more.
+OOP goes far further than this and you can set private properties, define getters and setters, use inheritance (an object definition uses another as a base), polymorphism (override methods such as `toString`) and more.
