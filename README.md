@@ -35,39 +35,46 @@ Notes:
 Can add Firebug Lite to HTML as above.
 
 
+### [ideone](https://ideone.com/)
+Online compiler and debugging tool. No collaboration, but can be used for Node.js.
+
+
 ## Topics covered
 
+* ☐ value and reference
 * ✅ module pattern
 * ✅ DOM selection
 * ✅ DOM manipulation
 * ✅ closures
 * ✅ events
 * ✅ OOP
+* ✅ recursion (see recursion)
+* ☐ browser debugging
+* ☐ date and time
 
 
 ## Topics to consider
 
+
+* types
+* arrays
+* strings
+* variables and scope
+* loops
+* functions and code blocks
+* bitwise operators
+* regular expressions
+* Window object
 * timers
+* persistence and storage
 * callbacks, Promises, async/await
 * Ajax
 * DOM mutation
 * Node.js
-* Types
-* Arrays
-* Strings
-* Variables and scope
-* Loops
-* Functions and code blocks
-* Bitwise operators
-* Regular Expressions
-* Date and time
-* OOP
-* Recursion
-* Window object
 * Form handling
 * HTML5 APIs: audio, video, geolocation, files, web workers
 * Progressive Web Apps
 * canvas and SVG
-* Persistence and storage
+
 
 Create simple project based on requirements.
