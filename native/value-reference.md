@@ -5,7 +5,7 @@
 ```javascript
 
 function inc(arg) {
-	arg++;
+  arg++;
   return arg;
 }
 
@@ -21,11 +21,11 @@ a = inc(a); // a is 2
 
 ```javascript
 function inc(arg) {
-	arg.counter++;
+  arg.counter++;
 }
 
 let a = {
-	counter: 1
+  counter: 1
 };
 
 inc(a);

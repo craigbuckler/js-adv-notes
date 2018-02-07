@@ -8,7 +8,7 @@ Newer JavaScript developers normally think OOP isn't supported. It is. In fact, 
 'hello'.length();
 ```
 
-`'Hello'` is a Sting object so the `length()` method can be run.
+`'Hello'` is a String object so the `length()` method can be run.
 
 Regularly used objects include `Math`, `window`, `document`, node and event objects.
 
@@ -40,7 +40,7 @@ That program let's you:
 1. Set certain options, such as your name, favourite colour, inside leg measurement (i.e. *properties*)
 2. Perform certain actions, such as post a message, upload a photo, fire a laser (i.e. *methods*)
 
-As a user, you don't care how any of this is implemented. You just have a public interface which allows you to set inputs, perform actions, and read the output of those actions. The underlying code could change completely and everything would still work.
+As a user, you don't care how any of this is implemented. You just have a public interface which allows you to set inputs, perform actions, and read the output of those actions. The underlying code could change completely but everything would work in the same way.
 
 An object can be thought of as a small self-contained program which has a set of related responsibilities.
 

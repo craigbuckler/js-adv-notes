@@ -52,3 +52,8 @@ Browsers then provide several buttons:
 * `step over` - run the next command, but do NOT follow it into other functions
 * `step into` - run the next command and follow it to other functions
 * `step out` - complete the current function and return back to the caller.
+
+
+## Links
+
+* [Debugging JavaScript With A Real Debugger You Did Not Know You Already Have](https://www.smashingmagazine.com/2018/02/javascript-firefox-debugger/)

@@ -32,7 +32,7 @@ var d = Date.parse(arg);
 if (!isNaN(d)) console.log(d);
 ```
 
-Note that `Date.parse` can be inconsistent across browsers.
+Note that `Date.parse` can be inconsistent across older browsers.
 
 
 ## Date properties
@@ -78,9 +78,9 @@ console.log(d); // midnight of today
 
 
 ## Tips
-If using Node.js on the server, it's often best to use the UTC functions which matches GMT outside of daylight saving time. UTC never changes.
+On the server (such as Node.js), it's often best to use the UTC functions everywhere (UTC aligns with GMT outside of daylight saving time). UTC never changes.
 
-On the client, you can use the user's local time (not UTC) although there's no guarantee it'll be set correctly. Never depend on it!
+On the client, you can use the user's local time (which may not be UTC) although there's no guarantee it'll be set correctly. Never depend on it!
 
 
 ## Further reading

@@ -91,7 +91,7 @@ Clunky to code, intermingles HTML and JavaScript and impossible to add further e
 
 ```javascript
 document.getElementById('click2').onclick = function(e) {
-	console.log('click2');
+  console.log('click2');
 };
 ```
 
@@ -106,7 +106,7 @@ document.getElementById('click3').addEventListener('click', handler3, false);
 
 // event handler
 function handler3(e) {
-	console.log('click3');
+  console.log('click3');
 }
 
 ```

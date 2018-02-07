@@ -90,7 +90,7 @@ function doSomething() {
 
 
 ## requestAnimationFrame
-Typically used for JS-powered animations, `requestAnimationFrame` calls a function when the browser is free shortly before the next repaint. The function is passed a timestamp
+Typically used for JS-powered animations, `requestAnimationFrame` calls a function when the browser is free shortly before the next repaint. That function is passed a timestamp.
 
 ```javascript
 // move an element from 0px to 100px in one second
@@ -106,7 +106,7 @@ function move(timestamp) {
   startTime = startTime || timestamp;
 
   let
-  	progress = Math.min(timestamp - startTime, moveTime),
+    progress = Math.min(timestamp - startTime, moveTime),
     t = progress / moveTime;
 
   // t is a timing value between 0 (start of animation) and 1 (end)
@@ -119,7 +119,7 @@ function move(timestamp) {
 
 ```
 
-`cancelAnimationFrame()` is also available but rarely required since it's difficult to cancel events which occur so quickly!
+`cancelAnimationFrame()` is also available. It's rarely required since you can simply not run `requestAnimationFrame` at the end of the animation. (That said, I've recently seen it used to cancel a game loop.)
 
 
 ## Exercises
