@@ -19,6 +19,10 @@ function doSomething() {
 }
 ```
 
+Modern browsers allow further arguments to be passed to the function, i.e. `setTimeout(doSomething, 1000, 1, 2, "three");`.
+
+Alternatively, you can use a function wrapper: `setTimeout(function() { doSomething(1, 2, "three"); }, 1000);`.
+
 Timeouts can also be cancelled with `clearTimeout` if you know their *value*:
 
 ```javascript
