@@ -41,17 +41,17 @@ Online compiler and debugging tool. No collaboration, but can be used for Node.j
 
 ## Topics covered
 
-* ☐ value and reference
+* ✅ value and reference
 * ✅ module pattern
 * ✅ DOM selection
 * ✅ DOM manipulation
 * ✅ closures
 * ✅ events
-* ✅ OOP
 * ✅ recursion (see recursion)
-* ☐ browser debugging
+* ✅ browser debugging
 * ☐ date and time
 * ☐ timers and JS animation
+* ☐ OOP
 
 
 ## Topics to consider

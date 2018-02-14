@@ -60,7 +60,7 @@ Main SET properties:
 * `.setMilliseconds()`
 * `.setTimezoneOffset()` - number of minutes difference to UTC
 
-Most of the above have UTC (Coordinated Universal Time) equivalents, e.g. `.getUTCFullYear()` and `.setUTCFullYear()`.
+Most of the above have UTC (Coordinated Universal Time - *yes, that's CUT!*) equivalents, e.g. `.getUTCFullYear()` and `.setUTCFullYear()`.
 
 Note that negative or impossible numbers are resolved correctly, e.g. using `.setDate(29)` on 1 February will resolve to 1 March on any non-leap year.
 
@@ -78,7 +78,7 @@ console.log(d); // midnight of today
 
 
 ## Tips
-On the server (such as Node.js), it's often best to use the UTC functions everywhere (UTC aligns with GMT outside of daylight saving time). UTC never changes.
+On the server (such as Node.js), it's often best to use the UTC functions everywhere (UTC aligns with GMT outside of daylight saving time). UTC remains constant and never changes according to seasons.
 
 On the client, you can use the user's local time (which may not be UTC) although there's no guarantee it'll be set correctly. Never depend on it!
 
@@ -94,5 +94,7 @@ Create functions to:
 1. Pretty-print a date in the format "DD-MM-YYYY, HH:MM".
 1. Given a date and a positive or negative number, adds that number to the day, i.e. -1 would return yesterday, 1 would return tomorrow.
 1. Given a date, return a new date matching midnight on the first day of month, e.g. 25-06-2018 would return 01-06-2018.
-1. Write a similar function which returns the last day of the month.
+1. Write a similar function which returns the last day of the month. (Hint: perhaps find the first day of the next month then subtract a day!)
 1. Given a date, return a new date matching midnight on the first Monday of that week, e.g. 28-01-18 would return 22-01-18.
+
+Bonus point: dates are objects so they are passed to functions by reference (a pointer to the value rather than a copy of the value is passed). Try and make your functions **immutable**, i.e. the function result does not change the value of the input parameter.

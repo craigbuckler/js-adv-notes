@@ -1,11 +1,12 @@
 # Timers
-Timers are useful for:
+Timers are useful for various activities including:
 
 1. Delaying an action.
-1. Running an action at pre-defined intervals.
+1. Running an action at pre-defined intervals, e.g. animations.
 1. Stopping execution temporarily so other code can run.
 
 **Note!** You cannot rely on timers firing with any accuracy. Setting something to trigger in 1000ms may occur, but the browser could be doing anything at that time and browser execution is single-threaded. It will run as soon as possible after the timeout.
+
 
 ## setTimeout and clearTimeout
 Runs an action once:
@@ -119,7 +120,7 @@ function move(timestamp) {
 
 ```
 
-`cancelAnimationFrame()` is also available. It's rarely required since you can simply not run `requestAnimationFrame` at the end of the animation. (That said, I've recently seen it used to cancel a game loop.)
+`cancelAnimationFrame()` is also available. It's rarely required since you can simply not run `requestAnimationFrame` at the end of the animation. *(That said, I've recently seen it used to cancel a game loop.)*
 
 
 ## Exercises
