@@ -220,9 +220,9 @@ Note there is a `class` command in ES6 which helps those coming from other langu
 
 [Textarea Limiter](https://jsfiddle.net/craigbuckler/y91ja2zL/) - a Twitter-like text-entry widget which limits the number of characters a user can enter.
 
-This object is initialised using `new TextareaLimit(textAreaNode);` where `textAreaNode` must be a `<textarea>` element with a `data-limit` attribute setting the maximum number of charaters.
+This object is initialised using `new TextareaLimit(textAreaNode);` where `textAreaNode` must be a `<textarea>` element with a `data-limit` attribute setting the maximum number of characters. A small self-running function creates an object for each appropriate `textarea` when the page loads. Each object then configures and manages itself without further code.
 
-A small self-running function creates an object for each appropriate `textarea` when the page loads. Each object then configures and manages itself without further code.
+Alternatively, don't look at this and try to create your own!
 
 
 ## Further reading

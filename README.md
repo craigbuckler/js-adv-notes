@@ -49,13 +49,14 @@ Online compiler and debugging tool. No collaboration, but can be used for Node.j
 * ✅ events
 * ✅ recursion (see recursion)
 * ✅ browser debugging
+* ✅ form handling basics and validation API
 * ☐ date and time
 * ☐ timers and JS animation
-* ☐ OOP
+* ☐ Object Oriented Programming
+* ☐ ES6 classes
 
 
 ## Topics to consider
-
 
 * types
 * arrays
@@ -71,7 +72,6 @@ Online compiler and debugging tool. No collaboration, but can be used for Node.j
 * Ajax
 * DOM mutation
 * Node.js
-* Form handling
 * HTML5 APIs: audio, video, geolocation, files, web workers
 * Progressive Web Apps
 * canvas and SVG
