@@ -50,8 +50,9 @@ Online compiler and debugging tool. No collaboration, but can be used for Node.j
 * ✅ recursion (see recursion)
 * ✅ browser debugging
 * ✅ form handling basics and validation API
-* ☐ date and time
-* ☐ timers and JS animation
+* ✅ date and time
+* ✅ timers and JS animation
+* ☐ windows and pop-ups
 * ☐ Object Oriented Programming
 * ☐ ES6 classes
 
@@ -66,7 +67,6 @@ Online compiler and debugging tool. No collaboration, but can be used for Node.j
 * functions and code blocks
 * bitwise operators
 * regular expressions
-* Window object
 * persistence and storage
 * callbacks, Promises, async/await
 * Ajax
