@@ -52,7 +52,7 @@ Online compiler and debugging tool. No collaboration, but can be used for Node.j
 * ✅ form handling basics and validation API
 * ✅ date and time
 * ✅ timers and JS animation
-* ☐ windows and pop-ups
+* ✅ windows and pop-ups
 * ☐ Object Oriented Programming
 * ☐ ES6 classes
 

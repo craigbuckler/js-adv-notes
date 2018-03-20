@@ -90,7 +90,6 @@ Our `Animal` class is a little too generic. Every time we make a new human, we m
 ```javascript
 // child class
 // makes a Human using Animal as a base
-let countHuman = 0;
 class Human extends Animal {
 
   constructor(name) {
@@ -98,7 +97,7 @@ class Human extends Animal {
     // calls the Animal constructor
     super(name, 2, 'nothing of interest');
     this.type = 'human';
-    countHuman++;
+    Human.count++;
 
   }
 
@@ -113,10 +112,13 @@ class Human extends Animal {
 
   // static methods can be called from the class directly
   static count() {
-    return countHuman;
+    return Human.count;
   }
 
 }
+
+// static counter (property of the class)
+Human.count = 0;
 ```
 
 New concepts:
@@ -125,6 +127,7 @@ New concepts:
 1. The `super` keyword which references the parent class.
 1. Overriding. We define a new `speak()` method (although it also calls `super.speak()`).
 1. `static` methods. These can be called without creating an object first.
+1. `static` properties. These are defined on the class itself (since everything is an object in JS).
 
 
 We can now create new `Human` objects in a simpler way. Properties like `.legs` are presumed to be 2 unless we change it.
@@ -149,3 +152,7 @@ console.log( Human.count() ); // 2
 ```
 
 Notice we can run the `static Human.count()` without defining a `new Human` object first. It keeps a running total of the number of humans we have created, however, there's no concept of static properties in JavaScript so it must update a global `countHuman` variable to retain the count.
+
+
+## Further reading
+ES6 classes are being updated in newer editions of JavaScript - watch out for some SitePoint articles soon!
