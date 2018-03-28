@@ -2,7 +2,7 @@
 
 Developers from other languages such as C, C++, C#, Java and PHP are often confused by JavaScripts prototypal inheritance. They are used to a classical model where a `class` template is defined up-front and all objects are instances of that class.
 
-ES6 introduces classes but they are syntactical sugar - below the surface, JavaScript still uses the same prototypal models. In addition, they are more limited, e.g. you cannot have private or static properties.
+ES6 introduces classes but they are syntactical sugar - below the surface, JavaScript still uses the same prototypal models. In addition, they are more limited, e.g. you cannot have private or static properties (yet).
 
 ES6 classes are supported by all modern browsers but not IE.
 

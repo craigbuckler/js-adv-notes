@@ -216,6 +216,57 @@ OOP in JavaScript is different to other languages in that the object template is
 Note there is a `class` command in ES6 which helps those coming from other languages. However, it's just a sprinkling of syntactical sugar - below the surface, it's using prototypes like you see above.
 
 
+## Inheritance
+Inheritance uses one object class as the basis for another. In JavaScript, this is achieved using `ParentClassName.prototype = new BaseClassName;`
+
+```javascript
+// base class
+function BaseClass() {
+
+  var privateVar = 'private';
+  this.Base = 'Base hello';
+  alert("BaseClass constructor");
+
+  // private variables can be used in functions specified in the class
+  this.privateVariableTest = function() {
+    alert('BaseClass.privateVariableTest: ' + privateVar);
+  }
+
+  this.Test = function() {
+    alert('BaseClass.Test: ' + this.Base);
+  }
+}
+
+
+// parent class
+function ParentClass() {
+
+    this.Parent = 'parent';
+    alert('ParentClass constructor');
+
+    // override BaseClass.Test (or use prototype)
+    this.Test = function() {
+      alert('ParentClass.Test: ' + this.Base);
+    }
+}
+
+// ParentClass inherits BaseClass
+// BaseClass constructor run now (even if no instances created)
+ParentClass.prototype = new BaseClass;
+
+// override BaseClass.Test
+ParentClass.prototype.Test = function() {
+  alert('ParentClass.Test: ' + this.Base);
+}
+
+var x = new ParentClass();
+x.privateVar = 'zzz'; // ignored
+x.PrivateVariableTest(); // shows "private"
+x.Base = 'Parent hello';
+x.Test(); // shows "Parent hello"
+```
+
+
 ## Examples
 
 [Textarea Limiter](https://jsfiddle.net/craigbuckler/y91ja2zL/) - a Twitter-like text-entry widget which limits the number of characters a user can enter.
