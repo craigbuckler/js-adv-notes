@@ -53,8 +53,8 @@ Online compiler and debugging tool. No collaboration, but can be used for Node.j
 * ✅ date and time
 * ✅ timers and JS animation
 * ✅ windows and pop-ups
-* ☐ Object Oriented Programming
-* ☐ ES6 classes
+* ✅ Object Oriented Programming
+* ✅ ES6 classes
 
 
 ## Topics to consider
