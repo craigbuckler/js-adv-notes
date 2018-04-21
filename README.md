@@ -55,6 +55,10 @@ Online compiler and debugging tool. No collaboration, but can be used for Node.j
 * ✅ windows and pop-ups
 * ✅ Object Oriented Programming
 * ✅ ES6 classes
+* ☐ Node.js
+* ☐ callbacks to promises to async/await
+* ☐ web workers
+* ☐ PWAs (service workers)
 
 
 ## Topics to consider
